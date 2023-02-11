@@ -1,17 +1,15 @@
 <template>
-<div>
-njk
-</div>
+  <div> 
+    <h1> laravel vue setup complete</h1>
+  </div>
 </template>
 
 <script>
-
 export default {
-  name: "dashboard",
 
 }
 </script>
 
-<style scoped>
+<style>
 
 </style>

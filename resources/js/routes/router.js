@@ -1,5 +1,6 @@
-import Registration from "../view/auth/Registration.vue";
+import index from "../views/index.vue";
 
 export const routes = [
-{path:'/',component:Registration,name:'registration'}
+{
+    path:'/', component:index,name:'index'}
 ]
