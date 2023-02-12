@@ -1,18 +1,10 @@
 import './bootstrap';
 import { createApp } from 'vue';
-import { createRouter, createWebHistory } from 'vue-router';
-import {routes} from "./routes/router";
-import { createPinia } from 'pinia'
 import App from './App.vue';
 
-const router = createRouter({
-    history: createWebHistory(),
-    routes
-})
-
-const pinia = createPinia()
+// Plugins
+import { registerPlugins } from './plugins'
 
 const app = createApp(App)
-app.use(router);
-app.use(pinia);
+app.use(registerPlugins);
 app.mount("#app");
