@@ -3,23 +3,21 @@ import {
 } from 'vite';
 import laravel from 'laravel-vite-plugin';
 import vue from '@vitejs/plugin-vue';
-import { fileURLToPath } from 'url'
-import vuetify from "vite-plugin-vuetify";
+import vuetify, {transformAssetUrls} from "vite-plugin-vuetify";
+import { fileURLToPath, URL } from 'node:url'
 
 export default defineConfig({
     plugins: [
         vue({
             template: {
-                transformAssetUrls: {
-                    includeAbsolute: false,
-                },
+                transformAssetUrls
             },
         }),
         vuetify({
             autoImport: true,
-            // styles: {
-            //     configFile: 'src/styles/settings.scss',
-            // },
+            styles: {
+                configFile: 'resources/js/styles/settings.scss',
+            },
         }),
         laravel({
             input: [
@@ -32,7 +30,16 @@ export default defineConfig({
     ],
     resolve: {
         alias: {
-            "@": fileURLToPath(new URL("./src", import.meta.url)),
+            '@': fileURLToPath(new URL('/resources/js', import.meta.url))
         },
+        extensions: [
+            '.js',
+            '.json',
+            '.jsx',
+            '.mjs',
+            '.ts',
+            '.tsx',
+            '.vue',
+        ],
     },
 });

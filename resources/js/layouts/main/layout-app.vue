@@ -77,20 +77,6 @@
           ></v-list-item>
         </v-list-group>
       </v-list>
-      <v-list>
-        <v-list-item
-          prepend-icon="mdi mdi-download"
-          title="Download"
-          href="https://github.com/aliftech/swing"
-          target="__blank"
-        ></v-list-item>
-        <v-list-item
-          prepend-icon="mdi mdi-currency-usd"
-          title="Donate"
-          href="https://teer.id/wahyu krisna aji"
-          target="__blank"
-        ></v-list-item>
-      </v-list>
     </v-navigation-drawer>
 
     <v-app-bar :elevation="2">
@@ -125,171 +111,6 @@ export default {
           title: "Dashboard",
           icon: "mdi-view-dashboard",
           url: "/",
-        },
-        {
-          title: "Layout",
-          icon: "mdi-page-layout-header-footer",
-          submenu: [
-            {
-              title: "Default Layout",
-              icon: "mdi-circle-small",
-              url: "/default-layout",
-            },
-            {
-              title: "Top Navigation",
-              icon: "mdi-circle-small",
-              url: "/top-nav",
-            },
-            {
-              title: "Bottom Navigation",
-              icon: "mdi-circle-small",
-              url: "/bottom-nav",
-            },
-          ],
-        },
-        {
-          title: "Blank Page",
-          icon: "mdi-file",
-          url: "/blank-page",
-        },
-        {
-          title: "Components",
-          icon: "mdi-view-dashboard-variant",
-          submenu: [
-            {
-              title: "Alert",
-              icon: "mdi-circle-small",
-              url: "/alert",
-            },
-            {
-              title: "Article",
-              icon: "mdi-circle-small",
-              url: "/article",
-            },
-            {
-              title: "Avatar",
-              icon: "mdi-circle-small",
-              url: "/avatar",
-            },
-            {
-              title: "Badge",
-              icon: "mdi-circle-small",
-              url: "/badge",
-            },
-            {
-              title: "Carousel",
-              icon: "mdi-circle-small",
-              url: "/carousel",
-            },
-            {
-              title: "Chat Box",
-              icon: "mdi-circle-small",
-              url: "/chat-box",
-            },
-            {
-              title: "Chart",
-              icon: "mdi-circle-small",
-              url: "/chart",
-            },
-            {
-              title: "Color Picker",
-              icon: "mdi-circle-small",
-              url: "/color-picker",
-            },
-            {
-              title: "Galery",
-              icon: "mdi-circle-small",
-              url: "/galery",
-            },
-            {
-              title: "Tab",
-              icon: "mdi-circle-small",
-              url: "/tab",
-            },
-            {
-              title: "Table",
-              icon: "mdi-circle-small",
-              url: "/table",
-            },
-            {
-              title: "Timeline",
-              icon: "mdi-circle-small",
-              url: "/timeline",
-            },
-          ],
-        },
-        {
-          title: "Form",
-          icon: "mdi-format-align-justify",
-          submenu: [
-            {
-              title: "Standard Form",
-              icon: "mdi-circle-small",
-              url: "/form-standard",
-            },
-            {
-              title: "Advanced Form",
-              icon: "mdi-circle-small",
-              url: "/form-advanced",
-            },
-            {
-              title: "Validation",
-              icon: "mdi-circle-small",
-              url: "/validation",
-            },
-          ],
-        },
-        {
-          title: "Authorization",
-          icon: "mdi-account-circle",
-          submenu: [
-            {
-              title: "Login",
-              icon: "mdi-circle-small",
-              url: "/login",
-            },
-            {
-              title: "Registration",
-              icon: "mdi-circle-small",
-              url: "/registration",
-            },
-            {
-              title: "Forget Password",
-              icon: "mdi-circle-small",
-              url: "/forget-password",
-            },
-            {
-              title: "Reset Password",
-              icon: "mdi-circle-small",
-              url: "/reset-password",
-            },
-          ],
-        },
-        {
-          title: "Errors",
-          icon: "mdi-alert-circle",
-          submenu: [
-            {
-              title: "403",
-              icon: "mdi-circle-small",
-              url: "/403",
-            },
-            {
-              title: "404",
-              icon: "mdi-circle-small",
-              url: "/404",
-            },
-            {
-              title: "500",
-              icon: "mdi-circle-small",
-              url: "/500",
-            },
-            {
-              title: "503",
-              icon: "mdi-circle-small",
-              url: "/503",
-            },
-          ],
         },
       ],
       icon: "",
@@ -334,7 +155,7 @@ export default {
 }
 
 .item_menu {
-  padding-left: 0px;
+  padding-left: 0;
   margin-left: -25px;
 }
 </style>

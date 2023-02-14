@@ -21,10 +21,10 @@
         },
         mounted() {
             this.getTheme()
-        },  
+        },
         methods: {
             tema() {
-                this.is_dark = this.is_dark ? false : true;
+                this.is_dark = !this.is_dark;
                 if(this.is_dark === true) {
                     this.theme = 'dark';
                     this.themeStorage();

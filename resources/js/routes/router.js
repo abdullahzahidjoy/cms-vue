@@ -15,5 +15,13 @@ export const routes = [
                 component: () => import(/* webpackChunkName: "home" */ '../views/index.vue'),
             },
         ],
+    },
+    {
+        path: '/login',
+        component: () => import(/* webpackChunkName: "login" */'../views/auth/login.vue'),
+        meta: {
+            title: 'Swing :: Login Page'
+        },
     }
+
 ]
